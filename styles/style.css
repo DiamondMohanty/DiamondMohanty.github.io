@@ -1,0 +1,125 @@
+/* Variables */
+:root {
+    --main-bg-color: #111;
+    --main-text-color: rgb(192, 192, 192);
+    --highlight-color: rgb(224, 36, 36);
+    --default-spacing: 20px;
+    --webkit-highlight: -webkit-linear-gradient(to right, var(--highlight-color) 0%, #CF4D4D 75%, var(--highlight-color) 100%);
+    --moz-highlight: -moz-linear-gradient(to right, var(--highlight-color) 0%, #CF4D4D 75%, var(--highlight-color) 100%);
+    --highlight: linear-gradient(to right, var(--highlight-color) 0%, #CF4D4D 75%, var(--highlight-color) 100%);
+}
+
+a.highlight, a.highlight:visited {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+a, a:visited {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+body {
+    background: var(--main-bg-color);
+    color: #bbb;
+    text-align: center;
+    padding-top: var(--default-spacing);
+}
+
+.highlight {
+    background: var(--highlight-color);
+    background: var(--webkit-highlight);
+    background: var(--moz-highlight);
+    background: var(--highlight);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1{
+    font-size: 72px;
+}
+
+.img-profile {
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.about-text {
+    margin: 50px auto;
+    padding: 20px;
+    width: 75%;
+    font-size: 1.3rem;
+    color: var(--main-text-color);
+}
+
+.contact-list {
+    text-align: right;
+}
+
+h2 {
+    font-size: 48px;      
+}
+
+/* Skills Styles */
+
+.skills-list {
+    width: 75%;
+    margin: 5px auto;
+}
+
+.skills-list li {
+    background-color: rgb(78, 77, 77);
+    width: auto;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    display: inline-block;
+
+}
+
+.skills-list li:hover:not(.active) {
+    background-color: #bbb;
+    cursor: pointer;
+    color: black;
+    -webkit-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+
+
+.skills-list li.active {
+    background-color: var(--highlight-color);
+    width: auto;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* Post */
+.posts {
+    margin: 50px;
+    text-align: left;
+}
+
+.posts h2 {
+    text-align: center;
+}
+
+.posts .post-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+/* Footer */
+footer {
+    padding: 20px auto;
+    color: white;
+    margin: 30px;
+}
+
+footer i {
+    color: red;
+}
