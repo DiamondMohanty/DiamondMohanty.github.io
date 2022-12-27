@@ -34,9 +34,9 @@
       <!-- Hamburger Ends -->
       <!-- About Starts -->
       <header>
-        <h1 class="highlight">Diamond Mohanty</h1>
-        <h3>iOS Developer and Data Science Enthusiast</h3>
-        <img src="assets/profile.jpeg" class="img img-profile">
+        <h1 class="highlight-text text-center">Diamond Mohanty</h1>
+        <h3 class="text-center">iOS Developer and Data Science Enthusiast</h3>
+        <div class="text-center"><img src="assets/profile.jpeg" class="img img-profile"></div>
       </header>
       <section>
         <p class="about-text" id="about-text">
@@ -46,7 +46,7 @@
       <!-- About Ends -->
       <!-- Skills Start -->
       <section class="skills">
-        <h2 class="highlight">
+        <h2 class="highlight-text text-center">
           Skills
         </h2>
         <ul class="list skills-list list-unstyled">
@@ -65,33 +65,28 @@
         </ul>
       </section>
       <!-- Skills End -->
-      <!-- Projects -->
-      
-      <section class='projects' id="projects">
-        <h2 class='highlight'>Projects</h2>
-        <div class="row" style="padding: 20px;">
-          <div class="col col-md-1 col-sm-1"></div>
-          <div class="col col-md-4 col-sm-1">
-            <img class='img-fluid demo-img' src='../assets/memory-blocks/app-hero.png' >
-            <h4>Memory Blocks</h4>
-            <p>Simple game to develop concentration</p>
-          </div>
-          <div class="col col-md-2 col-sm-1"></div>
-          <div class="col col-md-4 col-sm-1">
-            <img class='img-fluid demo-img' src='../assets/memory-blocks/app-hero.png' >
-          </div>
-          <div class="col col-md-1 col-sm-1"></div>
-        </div>
-        
-      </section>
-      
-      <!-- Projects -->
       <!-- Posts -->
-      
       <section class='posts'>
+        <h2 class='highlight-text'>Latest Posts</h2>
         {{ content }}
       </section>
       <!-- Posts End -->
+      <!-- Tags -->
+      <section class='posts'>
+        <h2 class='highlight-text'>Tags</h2>
+        <ul class="list-group list-group-horizontal">
+          {% for tag in site.tags %}
+              <li class="list-group-item">
+                <a>
+                  {{ tag[0] }}
+                </a>
+                <span class="badge bg-primary rounded-pill">{{ tag[1].size }}</span>
+            </li>
+
+          {% endfor %}
+        </ul>
+      </section>
+      <!-- Tags -->
     </div>
     <footer>
       Made With  <i class="fa-solid fa-heart"></i> by Diamond Mohanty

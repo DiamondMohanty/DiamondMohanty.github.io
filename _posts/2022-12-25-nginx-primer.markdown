@@ -2,12 +2,12 @@
 layout: post
 title:  "NGINX Primer"
 date:   2022-12-25
-categories: deployment-and-infrastructure
-excerpt_separator: <!--Read Now-->
+categories: "deployment-and-infrastructure"
+tags: Deployment Infrastructure
+author: Diamond Mohanty
+excerpt: Learn what is NGINX, standard terminologies and basic configurations for using NGINX for reverse-proxy and load balancing.
 ---
-Learn what is NGINX, standard terminologies and basic configurations for using NGINX for reverse-proxy and load balancing.
-<!--Read Now-->
-# NGINX
+
 ## What is NGINX
 To start with NGINX, we can say that it is a web server and serves web content. While NGINX is more than a web server. It has three primary applications 
 

@@ -1,4 +1,4 @@
-@import "sass-code-highlight/monokai";
+@import url(monokai.css);
 
 /* Variables */
 :root {
@@ -15,7 +15,7 @@ html {
     scroll-behavior: smooth;
 }
 
-a.highlight, a.highlight:visited {
+a.highlight-text, a.highlight-text:visited {
     color: var(--highlight-color);
     text-decoration: none;
 }
@@ -28,11 +28,10 @@ a, a:visited {
 body {
     background: var(--main-bg-color);
     color: rgb(92, 91, 91);
-    text-align: center;
     padding-top: var(--default-spacing);
 }
 
-.highlight {
+.highlight-text {
     background: var(--highlight-color);
     background: var(--webkit-highlight);
     background: var(--moz-highlight);
@@ -113,9 +112,6 @@ h2 {
     text-align: left;
 }
 
-.posts h2 {
-    text-align: center;
-}
 
 .posts .post-title {
     text-align: center;
@@ -127,7 +123,6 @@ h2 {
 /* Footer */
 footer {
     padding: 20px auto;
-    color: white;
     margin: 30px;
 }
 
