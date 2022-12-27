@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  "My First Project"
+title:  "Memory Blocks"
 date:   2022-02-12 00:29:37 -0500
 categories: projects
 excerpt_separator: <!--more-->
 ---
-A banana is an edible fruit – botanically a berry – produced by several kinds
-of large herbaceous flowering plants in the genus Musa.
+
 <!--more-->
 In some countries, bananas used for cooking may be called "plantains",
 distinguishing them from dessert bananas. The fruit is variable in size, color,

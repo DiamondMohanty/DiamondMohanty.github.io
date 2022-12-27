@@ -1,12 +1,18 @@
+@import "sass-code-highlight/monokai";
+
 /* Variables */
 :root {
-    --main-bg-color: #111;
-    --main-text-color: rgb(192, 192, 192);
+    --main-bg-color: rgb(255, 255, 255);
+    --main-text-color: rgb(66, 66, 66);
     --highlight-color: rgb(224, 36, 36);
     --default-spacing: 20px;
     --webkit-highlight: -webkit-linear-gradient(to right, var(--highlight-color) 0%, #CF4D4D 75%, var(--highlight-color) 100%);
     --moz-highlight: -moz-linear-gradient(to right, var(--highlight-color) 0%, #CF4D4D 75%, var(--highlight-color) 100%);
     --highlight: linear-gradient(to right, var(--highlight-color) 0%, #CF4D4D 75%, var(--highlight-color) 100%);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a.highlight, a.highlight:visited {
@@ -15,13 +21,13 @@ a.highlight, a.highlight:visited {
 }
 
 a, a:visited {
-    color: var(--main-text-color);
+    color: black !important;
     text-decoration: none;
 }
 
 body {
     background: var(--main-bg-color);
-    color: #bbb;
+    color: rgb(92, 91, 91);
     text-align: center;
     padding-top: var(--default-spacing);
 }
@@ -69,8 +75,9 @@ h2 {
 }
 
 .skills-list li {
-    background-color: rgb(78, 77, 77);
+    background-color: rgb(25, 160, 238);
     width: auto;
+    color: aliceblue;
     padding: 10px;
     margin: 5px;
     border-radius: 20px;
@@ -78,10 +85,9 @@ h2 {
 
 }
 
-.skills-list li:hover:not(.active) {
-    background-color: #bbb;
+/*.skills-list li:hover:not(.active) {
+    background-color: rgb(7, 71, 122);
     cursor: pointer;
-    color: black;
     -webkit-transition: all 400ms linear;
     -ms-transition: all 400ms linear;
     transition: all 400ms linear;
@@ -94,9 +100,14 @@ h2 {
     padding: 10px;
     border-radius: 20px;
     display: inline-block;
-}
+}*/
 
 /* Post */
+
+.projects {
+    margin-top: 75px;
+}
+
 .posts {
     margin: 50px;
     text-align: left;
@@ -123,3 +134,4 @@ footer {
 footer i {
     color: red;
 }
+

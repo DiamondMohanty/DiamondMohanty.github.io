@@ -1,14 +1,14 @@
 let actionButtons = document.getElementsByClassName('action-pill');
-for (let i = 0; i<actionButtons.length; i++) {
+/*for (let i = 0; i<actionButtons.length; i++) {
     actionButtons[i].addEventListener('click', (event) => {
         handlePillClick(event);
     });  
-}
+}*/
 
 hideAllDescriptions();
 
-setActiveBlock(actionButtons[0]);
-document.getElementById('language-details').style.display = 'inline-block';
+// setActiveBlock(actionButtons[0]);
+// document.getElementById('language-details').style.display = 'inline-block';
 
 
 function setActiveBlock(block) {
